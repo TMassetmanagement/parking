@@ -9,6 +9,9 @@
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="./" />
 
+  <!-- ✅ favicon追加 -->
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
   <style>
     :root{
       --bg:#0b1220;
@@ -169,7 +172,6 @@
       margin-top:16px;
     }
 
-    /* ※お問い合わせをgrid外に出したため、PC幅でも1カラムのままにする */
     @media (min-width: 820px){
       .grid{grid-template-columns: 1fr;}
     }
@@ -214,7 +216,6 @@
     .foot{margin-top:18px; color:var(--muted); font-size:12px}
     .hr{height:1px; background:rgba(255,255,255,.10); margin:16px 0}
 
-    /* gallery */
     .gallery{
       display:grid;
       grid-template-columns:1fr;
@@ -263,7 +264,6 @@
       resize:vertical;
     }
 
-    /* footer */
     .site-footer{
       margin-top:28px;
       padding:18px 0 0;
@@ -271,8 +271,9 @@
       color:var(--muted);
       font-size:13px;
     }
+
     .site-footer strong{color:var(--text)}
-    .site-footer .copy{margin-top:10px; font-size:12px}
+    .site-footer .copy{margin-top:10px; font-size:12px; text-align:center;}
   </style>
 </head>
 
@@ -340,7 +341,6 @@
       </section>
     </div>
 
-    <!-- ▼ お問い合わせ：最下部へ移動 -->
     <section class="card" id="contact" style="margin-top:18px;">
       <h3>お問い合わせフォーム</h3>
       <p class="small">24時間受付。内容確認のうえ、折り返しご連絡します。</p>
@@ -361,11 +361,15 @@
       </form>
     </section>
 
-    <!-- ▼ フッター：会社情報（社名＋住所） -->
+    <!-- ✅ フッターにロゴ追加 -->
     <footer class="site-footer" aria-label="会社情報">
-      <div>
-        <strong>TMアセットマネジメント</strong><br>
-        福岡県飯塚市伊岐須324-1
+      <div style="display:flex; align-items:center; gap:12px;">
+        <img src="./logo.png" alt="TMアセットマネジメント ロゴ"
+             style="width:40px; height:40px; object-fit:cover; border-radius:50%;">
+        <div>
+          <strong>TMアセットマネジメント</strong><br>
+          福岡県飯塚市伊岐須324-1
+        </div>
       </div>
       <div class="copy">© TMアセットマネジメント</div>
     </footer>
