@@ -1,0 +1,313 @@
+    :root{
+      --bg:#f5f8ff;
+      --card:#ffffff;
+      --text:#1a1f2e;
+      --muted:#6b7280;
+      --line:rgba(0,0,0,.08);
+      --accent:#2f6bff;
+      --radius:16px;
+      --max:980px;
+    }
+
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP","Hiragino Sans","Yu Gothic","Meiryo",sans-serif;
+      color:var(--text);
+      background:linear-gradient(180deg,#f8fbff 0%, #eef3ff 100%);
+      line-height:1.7;
+    }
+
+
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 16px 60px}
+
+    header{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      padding:10px 0 22px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .logo{
+      width:46px;
+      height:46px;
+      border-radius:999px;
+      background:#0d1b3b;
+      border:1px solid var(--line);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+      flex:0 0 auto;
+    }
+
+    .logo img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+
+    .brand h1{
+      font-size:14px;
+      margin:0;
+      color:var(--muted);
+      font-weight:600;
+    }
+
+    .brand .sub{
+      display:block;
+      font-size:18px;
+      color:var(--text);
+      font-weight:800;
+      letter-spacing:.2px;
+      margin-top:2px;
+    }
+
+    .hero{
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:26px 18px;
+    }
+
+    .hero h2{
+      margin:0 0 10px;
+      font-size:26px;
+      line-height:1.25;
+    }
+
+    .badges{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin:12px 0 18px;
+    }
+
+    .badge{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      padding:7px 10px;
+      border-radius:999px;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    .price{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      margin:10px 0 18px;
+    }
+
+    .price .yen{
+      font-size:30px;
+      font-weight:900;
+    }
+
+    .price .note{
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .cta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      margin-top:10px;
+    }
+
+    /* ✅ 送信ボタンを強く（単色＋白文字） */
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:14px 16px;
+      border-radius:12px;
+      background:#1d4ed8;
+      color:#ffffff;
+      font-weight:800;
+      border:0;
+      cursor:pointer;
+      transition:all .2s ease;
+    }
+
+    .btn:hover{
+      background:#153eaf;
+    }
+
+    .btn.secondary{
+      background:rgba(255,255,255,.06);
+      color:var(--text);
+      border:1px solid var(--line);
+      font-weight:800;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:14px;
+      margin-top:16px;
+    }
+
+    @media (min-width: 820px){
+      .grid{grid-template-columns: 1fr;}
+    }
+
+    #contact{
+      background:#e3ecff;
+      border:1px solid rgba(47,107,255,.35);
+      box-shadow:0 8px 24px rgba(47,107,255,.08);
+    }
+    .card{
+      background:#ffffff;
+      border:1px solid rgba(0,0,0,.06);
+      border-radius:var(--radius);
+      padding:18px;
+    }
+
+
+    .card h3{
+      margin:0 0 10px;
+      font-size:18px;
+    }
+
+    .list{
+      margin:0;
+      padding-left:18px;
+      color:var(--muted);
+    }
+
+    .kv{
+      display:grid;
+      grid-template-columns:120px 1fr;
+      gap:10px 12px;
+      margin:10px 0 0;
+      color:var(--muted);
+    }
+
+    .kv div{
+      padding:7px 0;
+      border-bottom:1px dashed rgba(255,255,255,.10);
+    }
+
+    .kv .k{
+      color:var(--text);
+      font-weight:700;
+    }
+
+    .small{font-size:13px; color:var(--muted)}
+    .foot{margin-top:18px; color:var(--muted); font-size:12px}
+    .hr{height:1px; background:rgba(255,255,255,.10); margin:16px 0}
+
+    .gallery{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:10px;
+      margin-top:10px;
+    }
+
+    @media (min-width: 540px){
+      .gallery{grid-template-columns:1fr 1fr;}
+    }
+
+    .ph{
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:14px;
+      overflow:hidden;
+      background:rgba(255,255,255,.03);
+    }
+
+    .ph img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      display:block;
+    }
+
+    .ph .cap{
+      padding:10px 12px;
+      font-size:12px;
+      color:var(--muted);
+    }
+
+    form{display:grid; gap:10px; margin-top:10px}
+
+    /* ✅ 入力欄を白＋視認性UP（focus強化） */
+    input, textarea{
+      width:100%;
+      padding:12px 12px;
+      border-radius:12px;
+      background:#ffffff;
+      border:1px solid rgba(0,0,0,.15);
+      color:#111827;
+      outline:none;
+      transition:all .2s ease;
+    }
+
+    input:focus,
+    textarea:focus{
+      border:1px solid #2f6bff;
+      box-shadow:0 0 0 3px rgba(47,107,255,.15);
+    }
+
+    textarea{
+      min-height:110px;
+      resize:vertical;
+    }
+
+    .site-footer{
+      margin-top:28px;
+      padding:18px 0 0;
+      border-top:1px solid rgba(255,255,255,.12);
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .site-footer strong{color:var(--text)}
+    .site-footer .copy{margin-top:10px; font-size:12px; text-align:center;}
+
+    /* ヘッダーを濃く */
+    header{
+      background:#0f1c3f;
+      padding:14px 18px;
+      border-radius:16px;
+    }
+
+    /* ヘッダーテキストを明るく */
+    .brand h1,
+    .brand .sub{
+      color:#ffffff;
+    }
+
+    /* フッターを濃く */
+    .site-footer{
+      background:#0f1c3f;
+      color:#dbe6ff;
+      padding:24px 18px;
+      border-radius:16px 16px 0 0;
+      border-top:none;
+    }
+
+    /* フッター内の強調色 */
+    .site-footer strong{
+      color:#ffffff;
+    }
+
+    /* コピーライト中央維持 */
+    .site-footer .copy{
+      text-align:center;
+      margin-top:14px;
+    }
