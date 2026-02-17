@@ -144,17 +144,23 @@
       margin-top:10px;
     }
 
+    /* ✅ 送信ボタンを強く（単色＋白文字） */
     .btn{
       display:inline-flex;
       align-items:center;
       justify-content:center;
-      padding:12px 16px;
+      padding:14px 16px;
       border-radius:12px;
-      background:linear-gradient(180deg, rgba(74,163,255,1), rgba(74,163,255,.75));
-      color:#061021;
-      font-weight:900;
+      background:#1d4ed8;
+      color:#ffffff;
+      font-weight:800;
       border:0;
       cursor:pointer;
+      transition:all .2s ease;
+    }
+
+    .btn:hover{
+      background:#153eaf;
     }
 
     .btn.secondary{
@@ -254,14 +260,22 @@
 
     form{display:grid; gap:10px; margin-top:10px}
 
+    /* ✅ 入力欄を白＋視認性UP（focus強化） */
     input, textarea{
       width:100%;
       padding:12px 12px;
       border-radius:12px;
-      background:rgba(255,255,255,.04);
-      border:1px solid rgba(255,255,255,.12);
-      color:var(--text);
+      background:#ffffff;
+      border:1px solid rgba(0,0,0,.15);
+      color:#111827;
       outline:none;
+      transition:all .2s ease;
+    }
+
+    input:focus,
+    textarea:focus{
+      border:1px solid #2f6bff;
+      box-shadow:0 0 0 3px rgba(47,107,255,.15);
     }
 
     textarea{
