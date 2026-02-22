@@ -311,3 +311,9 @@
       text-align:center;
       margin-top:14px;
     }
+    
+    .map-wrap {
+      margin-top: 16px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
