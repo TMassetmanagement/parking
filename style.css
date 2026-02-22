@@ -311,9 +311,72 @@
       text-align:center;
       margin-top:14px;
     }
-    
+
     .map-wrap {
       margin-top: 16px;
       border-radius: 8px;
       overflow: hidden;
+    }
+    /* ヘッダー全体の整列 */
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+    }
+
+    /* ロゴの固定サイズ */
+    .brand .logo img{
+      width:44px;
+      height:44px;
+      object-fit:cover;
+      border-radius:50%;
+      display:block;
+    }
+
+    /* 見出しの“詰まり”を解消 */
+    .brand h1{
+      margin:0;
+      line-height:1.25;
+      font-size:18px; /* 既存より大きければ少し下げる */
+      white-space:normal;
+    }
+
+    /* サブを控えめにして2行目に収める */
+    .brand .sub,
+    .brand p.sub{
+      margin:2px 0 0;
+      font-size:12px;
+      opacity:0.85;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+    }
+
+    .brand .logo img{
+      width:44px;
+      height:44px;
+      object-fit:cover;
+      border-radius:50%;
+      display:block;
+    }
+
+    .brand-text{
+      display:flex;
+      flex-direction:column;
+      min-width:0;
+    }
+
+    .brand-name{
+      font-weight:700;
+      line-height:1.2;
+    }
+
+    .brand-sub{
+      margin-top:2px;
+      font-size:12px;
+      opacity:0.85;
+      line-height:1.2;
+      word-break:break-word;
     }
